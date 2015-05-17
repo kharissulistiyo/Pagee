@@ -1,0 +1,358 @@
+/*
+Theme Name: Pagee
+Description: Used to style the TinyMCE editor.
+*/
+/**
+ * Table of Contents:
+ *
+ * 0.0 Font Face
+ * 1.0 Pagee Container
+ * 2.0 Typography
+ * 2.1 Font Weight
+ * 2.2 By Line Styles
+ * 3.0 Elements
+ * 4.0 Forms
+ */
+/*--------------------------------------------------------------
+0.0 Font Face
+--------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,600italic,600);
+@import url(http://fonts.googleapis.com/css?family=Gudea:400,400italic,700);
+/*--------------------------------------------------------------
+1.0 Pagee Container
+--------------------------------------------------------------*/
+.mce-content-body {
+  max-width: 745px;
+  width: 95%;
+  margin: 0 auto; }
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  color: #4f5151;
+  font-family: Cambria, Georgia, serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.9; }
+
+blockquote {
+  font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype, Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+  font-style: italic;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  color: #5f6060; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: "Gudea", sans-serif;
+  color: #444; }
+
+.pagee_css-title {
+  font-size: 50px; }
+
+.pagee_css-subtitle {
+  font-size: 16px; }
+
+.section-heading,
+.widget-title {
+  font-size: 30px;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #21a2e0;
+  margin: 0;
+  margin-bottom: 60px; }
+
+#page {
+  font-size: 16px; }
+
+p {
+  margin-bottom: 1.5em; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #eeeeee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666666;
+  cursor: help; }
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+big {
+  font-size: 125%; }
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  font-family: "Gudea", sans-serif;
+  letter-spacing: 0.17em; }
+
+/*--------------------------------------------------------------
+2.1 Font Weight
+--------------------------------------------------------------*/
+.pagee_css-light {
+  font-weight: 100; }
+
+/*--------------------------------------------------------------
+2.2 By Line Styles
+--------------------------------------------------------------*/
+.pagee_css-highlight {
+  color: #21a2e0; }
+
+.pagee_css-uppercase {
+  text-transform: uppercase; }
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+body {
+  background: white;
+  /* Fallback for when there is no custom background color defined. */ }
+
+blockquote, q {
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+hr {
+  background-color: #cccccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+ul, ol {
+  margin: 0 0 1.5em 3em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+  table td, table th {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.9em; }
+  table th {
+    font-weight: 700;
+    text-align: left; }
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  display: inline-block;
+  width: 200px;
+  max-width: 100%;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 0;
+  background: #21a2e0;
+  color: #fff;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 1.3em 1em 1.3em;
+  text-decoration: none; }
+  .button:hover,
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background: #a0d16c;
+    color: #fff; }
+  .button:active, .button:focus,
+  button:active,
+  button:focus,
+  input[type="button"]:active,
+  input[type="button"]:focus,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="submit"]:active,
+  input[type="submit"]:focus {
+    background: #f8c646; }
+  .button.bordered,
+  button.bordered,
+  input[type="button"].bordered,
+  input[type="reset"].bordered,
+  input[type="submit"].bordered {
+    border: 1px solid #21a2e0;
+    background: #fff;
+    color: #21a2e0; }
+    .button.bordered:hover,
+    button.bordered:hover,
+    input[type="button"].bordered:hover,
+    input[type="reset"].bordered:hover,
+    input[type="submit"].bordered:hover {
+      background: #21a2e0;
+      color: #fff; }
+    .button.bordered:active, .button.bordered:focus,
+    button.bordered:active,
+    button.bordered:focus,
+    input[type="button"].bordered:active,
+    input[type="button"].bordered:focus,
+    input[type="reset"].bordered:active,
+    input[type="reset"].bordered:focus,
+    input[type="submit"].bordered:active,
+    input[type="submit"].bordered:focus {
+      background: #fff; }
+  .button.secondary-button,
+  button.secondary-button,
+  input[type="button"].secondary-button,
+  input[type="reset"].secondary-button,
+  input[type="submit"].secondary-button {
+    background: #f8c646; }
+    .button.secondary-button:hover,
+    button.secondary-button:hover,
+    input[type="button"].secondary-button:hover,
+    input[type="reset"].secondary-button:hover,
+    input[type="submit"].secondary-button:hover {
+      background: #21a2e0;
+      color: #fff; }
+    .button.secondary-button:active, .button.secondary-button:focus,
+    button.secondary-button:active,
+    button.secondary-button:focus,
+    input[type="button"].secondary-button:active,
+    input[type="button"].secondary-button:focus,
+    input[type="reset"].secondary-button:active,
+    input[type="reset"].secondary-button:focus,
+    input[type="submit"].secondary-button:active,
+    input[type="submit"].secondary-button:focus {
+      background: #f8c646; }
+    .button.secondary-button.bordered,
+    button.secondary-button.bordered,
+    input[type="button"].secondary-button.bordered,
+    input[type="reset"].secondary-button.bordered,
+    input[type="submit"].secondary-button.bordered {
+      border: 1px solid #f8c646;
+      background: #fff;
+      color: #21a2e0; }
+      .button.secondary-button.bordered:hover,
+      button.secondary-button.bordered:hover,
+      input[type="button"].secondary-button.bordered:hover,
+      input[type="reset"].secondary-button.bordered:hover,
+      input[type="submit"].secondary-button.bordered:hover {
+        background: #f8c646;
+        color: #fff; }
+      .button.secondary-button.bordered:active, .button.secondary-button.bordered:focus,
+      button.secondary-button.bordered:active,
+      button.secondary-button.bordered:focus,
+      input[type="button"].secondary-button.bordered:active,
+      input[type="button"].secondary-button.bordered:focus,
+      input[type="reset"].secondary-button.bordered:active,
+      input[type="reset"].secondary-button.bordered:focus,
+      input[type="submit"].secondary-button.bordered:active,
+      input[type="submit"].secondary-button.bordered:focus {
+        background: #fff; }
+
+.pagee_form-row {
+  margin-bottom: 20px; }
+  .pagee_form-row:before, .pagee_form-row:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.pagee_field_button button {
+  float: right; }
+
+.pagee_field_input input[type="text"],
+.pagee_field_input input[type="email"],
+.pagee_field_input input[type="url"],
+.pagee_field_input input[type="password"],
+.pagee_field_input input[type="search"],
+.pagee_field_input input[type="number"] {
+  width: 320px;
+  max-width: 100%; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+textarea {
+  color: #666666;
+  border: 1px solid #e6e8e4; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  input[type="number"]:focus,
+  textarea:focus {
+    color: #111111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"] {
+  padding: 3px; }
+
+textarea {
+  padding-left: 3px;
+  width: 100%; }
