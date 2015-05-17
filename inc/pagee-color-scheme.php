@@ -127,6 +127,7 @@ function pagee_header_background_color_css() {
       a,
       a:visited,
       .cat-links a,
+      .menu-toggle,
       .tags-links a:visited,
       .edit-link a:visited,
       .cat-links a:visited,
@@ -219,12 +220,6 @@ add_action( 'wp_enqueue_scripts', 'pagee_header_background_color_css', 11 );
  * Can be filtered with {@see 'pagee_color_schemes'}.
  *
  * The order of colors in a colors array:
- * 1. Main Background Color.
- * 2. Sidebar Background Color.
- * 3. Box Background Color.
- * 4. Main Text and Link Color.
- * 5. Sidebar Text and Link Color.
- * 6. Meta Box Background Color.
  *
  * @since   1.0.0
  *
